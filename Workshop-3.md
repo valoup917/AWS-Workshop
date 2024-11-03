@@ -1,7 +1,7 @@
 Workshop 3 : Gestion des Fichiers avec Amazon S3 et Base de Données NoSQL avec DynamoDB
 =======================================================================================
 
-Dans ce troisième workshop, nous allons ajouter des fonctionnalités de stockage de fichiers et de métadonnées pour notre plateforme **CodeCraft**. Nous utiliserons **Amazon S3** pour gérer les fichiers et **DynamoDB** pour stocker les informations associées. Cela permet à chaque projet de disposer d'un espace de stockage dédié pour les documents et ressources (images, fichiers de documentation, etc.).
+Dans ce troisième workshop, nous allons ajouter des fonctionnalités de stockage de fichiers et de métadonnées pour votre plateforme. Nous utiliserons **Amazon S3** pour gérer les fichiers et **DynamoDB** pour stocker les informations associées. Cela permet à chaque projet de disposer d'un espace de stockage dédié pour les documents et ressources (images, fichiers de documentation, etc.).
 
 Objectifs
 ---------
@@ -32,7 +32,7 @@ Nous allons commencer par configurer un bucket S3 où les fichiers de chaque pro
 
 1.  Dans la console AWS, recherchez **S3** et cliquez sur **Create bucket**.
     
-2.  Donnez un nom unique au bucket (ex. : CodeCraft-project-files).
+2.  Donnez un nom unique au bucket (ex. : yourPorjectName-project-files).
     
 3.  Laissez les paramètres par défaut, mais assurez-vous que le **blocage de l'accès public** est activé pour des raisons de sécurité.
     
@@ -79,7 +79,7 @@ s3_client = boto3.client('s3')
 dynamodb_client = boto3.resource('dynamodb')
 table = dynamodb_client.Table('FileMetadata')
 
-BUCKET_NAME = 'CodeCraft-project-files'
+BUCKET_NAME = 'yourPorjectName-project-files'
 
 def lambda_handler(event, context):
     file_content = event['file_content']  # Contenu du fichier
