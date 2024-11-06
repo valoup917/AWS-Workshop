@@ -10,13 +10,6 @@ Dans ce premier workshop, nous allons configurer l'infrastructure réseau, la ba
 
 ---
 
-## Prérequis
-- **Compte AWS** avec permissions administratives.
-- **AWS CLI** installé et configuré localement.
-- **Accès à l'interface de gestion AWS** pour effectuer certaines configurations.
-
----
-
 ## Étapes
 
 ### 1. Création du VPC et des sous-réseaux
