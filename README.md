@@ -115,4 +115,3 @@ Dans ce premier workshop, nous allons configurer l'infrastructure réseau, la ba
 1. **Tester la connexion à la base de données** depuis la fonction Lambda pour vérifier la configuration réseau et l'accès sécurisé.
 2. **Vérifier l'authentification** en utilisant l’application front-end pour se connecter avec Cognito, puis appeler la fonction Lambda pour ajouter une tâche dans la base de données.
 3. Utilisez **AWS CLI** ou l'interface de gestion AWS pour consulter les logs et confirmer que chaque étape fonctionne comme prévu.
-```
